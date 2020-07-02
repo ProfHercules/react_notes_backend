@@ -10,11 +10,15 @@
     "logs:prod": "heroku logs --tail",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ProfHercules/react_notes_backend.git"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "Hercules Smith",
   "license": "MIT",
@@ -30,6 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^7.3.1",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4"
   }
 }
